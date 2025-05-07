@@ -152,6 +152,7 @@ class YOLOV8_Distributed(BaseDetector):
         self.predictor.args.batch = batch_size
         self.predictor.args.conf = det_conf_thres
         self.predictor.args.device = local_rank
+        self.predictor.args.verbose = False
 
         
         # Create checkpoint directory
